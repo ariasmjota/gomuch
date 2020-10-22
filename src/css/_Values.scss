@@ -115,7 +115,6 @@
 }
 @media (max-width: 600px) {
   .values {
-      
     &__box {
       display: flex;
       flex-direction: column;
@@ -125,29 +124,29 @@
       padding: 5%;
       margin-left: 20%;
 
-      &-one{
-          margin-bottom: 5%;
+      &-one {
+        margin-bottom: 5%;
       }
-      &-two{
+      &-two {
         margin-bottom: 5%;
-    }
-    &-three{
+      }
+      &-three {
         margin-bottom: 5%;
-    }
+      }
       h3 {
         font-size: 14px;
         text-align: center;
       }
-      img{
-          width: 20%;
+      img {
+        width: 20%;
       }
     }
-    &__what{
-    flex-direction: column;
-img{
-    width: 80%;
-    margin-left: 10%;
-}    
-}
-}
+    &__what {
+      flex-direction: column;
+      img {
+        width: 80%;
+        margin-left: 10%;
+      }
+    }
+  }
 }

@@ -34,9 +34,21 @@
           box-shadow: 0px 0px 30px rgba(161, 161, 161, 0.3);
 }
 
+.newsletter__box p {
+  padding-top: 5%;
+  padding-left: 10%;
+}
+
+.newsletter__text-input {
+  margin-left: 10%;
+}
+
+.newsletter__text-input p {
+  padding: 5% 0;
+}
+
 .button {
   background-color: #ff298a;
-  /* Green */
   border: none;
   color: white;
   border-radius: 5px;
@@ -116,6 +128,57 @@
   }
   h3 {
     font-size: 12px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  .inputText {
+    width: 300px;
+    height: 30px;
+  }
+  ::-webkit-input-placeholder {
+    font-size: 14px;
+    color: gray;
+    padding: 10px;
+  }
+  :-ms-input-placeholder {
+    font-size: 14px;
+    color: gray;
+    padding: 10px;
+  }
+  ::-ms-input-placeholder {
+    font-size: 14px;
+    color: gray;
+    padding: 10px;
+  }
+  ::placeholder {
+    font-size: 14px;
+    color: gray;
+    padding: 10px;
+  }
+  .newsletter {
+    color: #686868;
+    background-color: white;
+    padding: 15% 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .newsletter p {
+    padding-top: 5%;
+    padding-left: 10%;
+  }
+  .newsletter__text-input {
+    margin-left: 10%;
+  }
+  .newsletter__text-input p {
+    padding: 5% 0;
   }
 }
 
@@ -534,5 +597,24 @@
 .gomunch p {
   margin: 5%;
   padding: 5%;
+}
+
+@media (max-width: 600px) {
+  .gomunch img {
+    width: 80%;
+    margin-left: 15%;
+  }
+  .gomunch__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .gomunch__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

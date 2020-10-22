@@ -24,10 +24,22 @@ $gray: #686868;
     padding: 30px;
     border-radius: 5px;
     box-shadow: 0px 0px 30px rgba(161, 161, 161, 0.3);
+
+    p {
+      padding-top: 5%;
+      padding-left: 10%;
+    }
+  }
+  &__text-input {
+    margin-left: 10%;
+
+    p {
+      padding: 5% 0;
+    }
   }
 }
 .button {
-  background-color: $pink; /* Green */
+  background-color: $pink; 
   border: none;
   color: white;
   border-radius: 5px;
@@ -78,7 +90,38 @@ $gray: #686868;
   h3 {
     font-size: 12px;
   }
-  
+  h2 {
+    font-size: 18px;
+  }
+  .inputText {
+    width: 300px;
+    height: 30px;
+  }
+  ::placeholder {
+    font-size: 14px;
+    color: gray;
+    padding: 10px;
+  }
+  .newsletter {
+    color: $gray;
+    background-color: white;
+    padding: 15% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      padding-top: 5%;
+      padding-left: 10%;
+    }
+
+    &__text-input {
+      margin-left: 10%;
+
+      p {
+        padding: 5% 0;
+      }
+    }
+  }
 }
 
 @import "./Nav";

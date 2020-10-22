@@ -131,7 +131,7 @@ function App() {
             Manten cercanía en tu relación a distancia, ¡inicia ahora y obten tu
             cupón de descuento!
           </p>
-          <div className="banner__text-input">
+          <div className="newsletter__text-input">
             <p>Prueba goMunch gratis.</p>
             <input type="text" className="inputText" placeholder="Correo electrónico"></input>
             <button className="button">Probar ahora</button>

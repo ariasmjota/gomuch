@@ -1,0 +1,22 @@
+.gomunch {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 90%;
+  align-items: center;
+
+  &__top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  &__bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  p {
+    margin: 5%;
+    padding: 5%;
+  }
+}

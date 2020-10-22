@@ -26,6 +26,9 @@ function App() {
             <p>Prueba goMunch gratis.</p>
             <input type="text" className="inputText" placeholder="Correo electrónico"></input>
             <button className="button">Probar ahora</button>
+            <button className="button__hidden">
+            <i class="fas fa-paper-plane"></i>
+            </button>
           </div>
         </article>
         <article className="banner__imagen">
@@ -132,6 +135,9 @@ function App() {
             <p>Prueba goMunch gratis.</p>
             <input type="text" className="inputText" placeholder="Correo electrónico"></input>
             <button className="button">Probar ahora</button>
+            <button className="button__hidden">
+            <i class="fas fa-paper-plane"></i>
+            </button>
           </div>
         </article>
       </section>

@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5c7f26b79bd157440203573c8472efcd",
+    "revision": "869fff73faca06171a6e2a8265bebca0",
     "url": "/gomuch/index.html"
   },
   {
-    "revision": "6db095b047f81e13eaab",
-    "url": "/gomuch/static/css/main.b2cb99f5.chunk.css"
+    "revision": "89968a6b52a1f79986cf",
+    "url": "/gomuch/static/css/main.e17752f2.chunk.css"
   },
   {
     "revision": "cd366e321cf17e9882bd",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gomuch/static/js/2.e06cbd21.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6db095b047f81e13eaab",
-    "url": "/gomuch/static/js/main.fa269430.chunk.js"
+    "revision": "89968a6b52a1f79986cf",
+    "url": "/gomuch/static/js/main.fc610967.chunk.js"
   },
   {
     "revision": "0d7c819c1d66c24dd78c",

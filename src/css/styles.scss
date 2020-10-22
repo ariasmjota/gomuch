@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+$blue: #1bd6ff;
+$pink: #ff298a;
+$gray: #686868;
+.App {
+  background: $blue;
+  z-index: -1;
+  padding: 4% 0;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  align-items: center;
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+
+  &__cupon {
+    color: white;
+  }
+}
+.banner {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5%;
+  padding: 0 5%;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: white;
+
+    &-input {
+      margin-top: 5%;
+    }
+
+    h1 {
+      font-size: 50px;
+    }
+  }
+  &__imagen {
+    display: flex;
+    width: 50%;
+    padding: 3%;
+
+    img {
+      width: 100%;
+    }
+  }
+  .inputText {
+    margin-top: 2%;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 10px 10px 10px rgba(161, 161, 161, 0.5);
+    color: gray;
+    width: 300px;
+    height: 30px;
+  }
+  .button {
+    background-color: $pink; /* Green */
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 5px;
+    box-shadow: 10px 10px 10px rgba(161, 161, 161, 0.5);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 3%;
+  }
+}
+
+.values {
+  color: $gray;
+  background-color: white;
+  padding: 8% 0;
+
+  &__title {
+    margin-left: 10%;
+    border-left: 4px solid $pink;
+    padding: 0 2%;
+  }
+  &__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    align-items: center;
+
+    h3{
+      font-size: 16px;
+      color: $pink;
+    }
+  }
+}

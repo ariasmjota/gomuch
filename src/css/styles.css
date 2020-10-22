@@ -135,14 +135,127 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 70%;
+  width: 90%;
+  padding: 5%;
+  margin: 0 5%;
+}
+
+.values__box-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 10px 10px 10px rgba(161, 161, 161, 0.3);
+          box-shadow: 10px 10px 10px rgba(161, 161, 161, 0.3);
+  margin-right: 5%;
+}
+
+.values__box-one img {
+  color: #1bd6ff;
+  width: 30%;
+}
+
+.values__box-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-shadow: 10px 10px 10px rgba(161, 161, 161, 0.3);
+          box-shadow: 10px 10px 10px rgba(161, 161, 161, 0.3);
+  margin-right: 5%;
+  color: #1bd6ff;
+}
+
+.values__box-two img {
+  color: #1bd6ff;
+  width: 30%;
+}
+
+.values__box-three {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-shadow: 10px 10px 10px rgba(161, 161, 161, 0.3);
+          box-shadow: 10px 10px 10px rgba(161, 161, 161, 0.3);
+  margin-right: 5%;
+}
+
+.values__box-three img {
+  color: #1bd6ff;
+  width: 30%;
 }
 
 .values__box h3 {
   font-size: 16px;
   color: #ff298a;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.values__what {
+  margin-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 5%;
+  position: relative;
+}
+
+.values__what-left {
+  width: 80%;
+  z-index: 2;
+}
+
+.values__what-left p {
+  margin-top: 15%;
+  margin-left: 10%;
+  z-index: 2;
+}
+
+.values__what-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.values__what-right img {
+  width: 100%;
+  z-index: 2;
+}
+
+#background {
+  position: absolute;
+  bottom: 20%;
+  left: 0px;
+  width: 100%;
+  height: 30%;
+  background-color: #1bd6ff;
+  z-index: 1;
 }
 /*# sourceMappingURL=styles.css.map */

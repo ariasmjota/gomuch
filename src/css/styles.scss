@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+
 * {
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 $blue: #1bd6ff;
 $pink: #ff298a;
 $gray: #686868;
+
 .App {
   background: $blue;
   padding: 4% 0;
@@ -20,6 +23,7 @@ $gray: #686868;
   display: flex;
   justify-content: center;
   align-items: center;
+
   &__box {
     padding: 30px;
     border-radius: 5px;
@@ -30,6 +34,7 @@ $gray: #686868;
       padding-left: 10%;
     }
   }
+
   &__text-input {
     margin-left: 10%;
 
@@ -38,8 +43,9 @@ $gray: #686868;
     }
   }
 }
+
 .button {
-  background-color: $pink; 
+  background-color: $pink;
   border: none;
   color: white;
   border-radius: 5px;
@@ -50,7 +56,10 @@ $gray: #686868;
   display: inline-block;
   font-size: 16px;
   margin-left: 3%;
+  cursor: pointer;
+  outline: none;
 }
+
 .inputText {
   margin-top: 2%;
   border: none;
@@ -62,11 +71,13 @@ $gray: #686868;
   width: 300px;
   height: 30px;
 }
+
 ::placeholder {
   font-size: 14px;
   color: gray;
   padding: 10px;
 }
+
 .marca {
   display: flex;
   flex-direction: column;
@@ -84,24 +95,30 @@ $gray: #686868;
   h1 {
     font-size: 45px;
   }
+
   p {
     font-size: 12px;
   }
+
   h3 {
     font-size: 12px;
   }
+
   h2 {
     font-size: 18px;
   }
+
   .inputText {
     width: 300px;
     height: 30px;
   }
+
   ::placeholder {
     font-size: 14px;
     color: gray;
     padding: 10px;
   }
+
   .newsletter {
     color: $gray;
     background-color: white;
@@ -109,6 +126,7 @@ $gray: #686868;
     display: flex;
     justify-content: center;
     align-items: center;
+
     p {
       padding-top: 5%;
       padding-left: 10%;

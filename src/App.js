@@ -4,14 +4,28 @@ import firebase from "./config/firebase";
 function App() {
   const base = firebase.firestore().collection("correos");
   const [useCorreo, setCorreo] = useState("");
+  const date = new Date();
+  console.log(
+    date.toDateString() + " - " + date.getHours() + ":" + date.getMinutes()
+  );
   function click(e) {
-    base
-      .doc(useCorreo)
-      .set({ correo: useCorreo }, { merge: true })
-      .then(() => {
-        setCorreo("");
-      })
-      .catch((err) => console.log(err.message));
+    setCorreo("");
+    e.preventDefault();
+    let hour = date.getHours() < 10 ? "0" + date.getHours() : date.getHours();
+    let minute =
+      date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
+
+    let now = date.toDateString() + hour + ":" + minute;
+
+    if (useCorreo !== "") {
+      base
+        .doc(useCorreo)
+        .set({ correo: useCorreo, fecha: now }, { merge: true })
+        .catch((err) => console.log(err.message));
+      alert("Muchas gracias por inscribirte");
+    } else {
+      alert("Por favor ingrese un correo");
+    }
   }
 
   return (
@@ -159,12 +173,13 @@ function App() {
             <p>Prueba goMunch gratis.</p>
             <form autoComplete="true">
               <input
-                type="email"
                 className="inputText"
                 placeholder="Correo electrónico"
                 onChange={(e) => setCorreo(e.target.value)}
-                defaultValue={useCorreo}
-              ></input>
+                value={useCorreo}
+                required
+                type="email"
+              />
               <button type="submit" className="button" onClick={click}>
                 Probar ahora
               </button>

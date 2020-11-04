@@ -1,6 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
+import firebase from "./config/firebase";
 
 function App() {
+  const base =firebase.firestore().collection("correos");
+  const [useCorreo, setCorreo] = useState('');
+  function click(e){
+    e.preventDefault();
+    base.doc()
+    .set({useCorreo},{merge:true})
+    .then((doc) => {
+      console.log("majo");
+      setCorreo('')
+    }).catch(
+      (err) => console.log(err.message)
+    );
+  }
   return (
     <div className="App">
       <nav className="nav">
@@ -24,11 +38,14 @@ function App() {
           </p>
           <div className="banner__text-input">
             <p>Prueba goMunch gratis.</p>
-            <input type="text" className="inputText" placeholder="Correo electrónico"></input>
-            <button className="button">Probar ahora</button>
-            <button className="button__hidden">
+            <form autocomplete>
+            <input required type="email" className="inputText" placeholder="Correo electrónico" onChange={(e)=>setCorreo(e.target.value)}></input>
+            <button type="submit" className="button" onClick={click}>Probar ahora</button>
+            <button type="submit" className="button__hidden" onClick={click}>
             <i class="fas fa-paper-plane"></i>
             </button>
+            </form>
+            
           </div>
         </article>
         <article className="banner__imagen">
@@ -141,13 +158,13 @@ function App() {
           </div>
         </article>
       </section>
-      <div className="marca" >
+      <a className="marca" >
 <p>Made by</p>
       <img
               src={process.env.PUBLIC_URL + "/assets/svg/Marcasola.svg"}
               alt="Relación a distancia"
             ></img>
-            </div>
+            </a>
     </div>
   );
 }

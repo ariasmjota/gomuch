@@ -70,6 +70,10 @@ $gray: #686868;
   color: gray;
   width: 300px;
   height: 30px;
+
+  box-sizing: border-box;
+  padding-left: 6px;
+  outline: none;
 }
 
 ::placeholder {
@@ -111,6 +115,10 @@ $gray: #686868;
   .inputText {
     width: 300px;
     height: 30px;
+
+    box-sizing: border-box;
+    padding-left: 6px;
+    outline: none;
   }
 
   ::placeholder {

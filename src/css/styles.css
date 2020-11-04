@@ -60,6 +60,8 @@
   display: inline-block;
   font-size: 16px;
   margin-left: 3%;
+  cursor: pointer;
+  outline: none;
 }
 
 .inputText {
@@ -73,6 +75,10 @@
   color: gray;
   width: 300px;
   height: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 6px;
+  outline: none;
 }
 
 ::-webkit-input-placeholder {
@@ -135,6 +141,10 @@
   .inputText {
     width: 300px;
     height: 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 6px;
+    outline: none;
   }
   ::-webkit-input-placeholder {
     font-size: 14px;
@@ -251,6 +261,7 @@
 
 .banner__text-input {
   margin-top: 5%;
+  padding-left: 6px;
 }
 
 .banner__text h1 {
@@ -337,6 +348,10 @@
   .inputText {
     width: 150px;
     height: 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 6px;
+    outline: none;
   }
 }
 
